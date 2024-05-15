@@ -1,4 +1,5 @@
 import type ICategoria from "@/interfaces/ICategorias";
+import type IReceita from "@/interfaces/IReceitas";
 import axios from "axios";
 
 
@@ -11,4 +12,16 @@ export async function obterCategorias(){
   const categorias: ICategoria[] = resposta.data;
   
   return categorias
+}
+
+export async function obterReceitas(){
+  
+  const resposta = await axios.get('https://gist.githubusercontent.com/antonio-evaldo/002ad55e1cf01ef3fc6ee4feb9152964/raw/bf463b47860043da3b3604ca60cffc3ad1ba9865/receitas.json');
+
+
+console.log(resposta.data);
+
+  const receitas: IReceita[] = resposta.data;
+  
+  return receitas
 }
