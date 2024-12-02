@@ -10,7 +10,7 @@
 
       <p class="subtitulo-lg">
         Explore novas receitas todos os dias com os ingredientes que estão ao
-        seu alcance!
+        seu alcance.
       </p>
     </div>
     <img
